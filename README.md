@@ -197,6 +197,22 @@ docker run -d \
    * `CLOUDINARY_API_KEY` = *your Cloudinary API Key*
    * `CLOUDINARY_API_SECRET` = *your Cloudinary API Secret*
 
+#### Deploy to Heroku
+SpatialPosters includes a `heroku.yml` and `app.json` file for easy deployment on Heroku.
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dwnsk-cpu/SpatialPosters/tree/dev)
+
+You can deploy the Docker container to Heroku using the following steps:
+1. Make sure your Heroku CLI is logged in and the Container Registry plugin is installed (`heroku container:login`).
+2. Set the stack of your app to container: `heroku stack:set container -a <your-app-name>`
+3. Push and release the application:
+   ```bash
+   git push heroku main
+   ```
+
+> [!WARNING]
+> **Heroku Ephemeral Storage:** Heroku has an ephemeral filesystem, meaning changes to the local `/data` directory will be lost whenever the dyno restarts. For persistent configurations, use Cloudinary or external S3-compatible storage.
+
 #### Deploy to Render / HuggingFace Spaces
 Deploy using the included `Dockerfile` on any Docker-compatible hosting platform.
 

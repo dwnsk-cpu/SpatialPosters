@@ -1,0 +1,24 @@
+{
+  "name": "SpatialPosters",
+  "description": "High-quality crowdsourced artwork for media servers.",
+  "repository": "https://github.com/dwnsk-cpu/SpatialPosters",
+  "logo": "https://raw.githubusercontent.com/TheAceOfficials/SpatialPosters/main/public/spatialposters-logo.png",
+  "keywords": ["stremio", "posters", "artwork", "media", "nextjs", "docker"],
+  "stack": "container",
+  "env": {
+    "SPATIALPOSTERS_TMDB_KEY": {
+      "description": "TMDB v3 API Key required for fetching default artwork.",
+      "required": true
+    },
+    "SPATIALPOSTERS_PUBLIC_INSTANCE": {
+      "description": "Set to 1 to enable public multi-user instance mode.",
+      "value": "1",
+      "required": false
+    },
+    "SPATIALPOSTERS_DATA_DIR": {
+      "description": "Path to data storage. Leave default for Heroku ephemeral storage or mount a volume if possible.",
+      "value": "/data",
+      "required": false
+    }
+  }
+}
