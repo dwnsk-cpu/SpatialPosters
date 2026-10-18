@@ -1,7 +1,7 @@
 {
   "name": "SpatialPosters",
   "description": "High-quality crowdsourced artwork for media servers.",
-  "repository": "https://github.com/TheAceOfficials/SpatialPosters",
+  "repository": "https://github.com/dwnsk-cpu/SpatialPosters",
   "logo": "https://raw.githubusercontent.com/TheAceOfficials/SpatialPosters/main/public/spatialposters-logo.png",
   "keywords": ["stremio", "posters", "artwork", "media", "nextjs", "docker"],
   "stack": "container",

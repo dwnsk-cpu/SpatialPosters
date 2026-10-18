@@ -200,7 +200,7 @@ docker run -d \
 #### Deploy to Heroku
 SpatialPosters includes a `heroku.yml` and `app.json` file for easy deployment on Heroku.
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheAceOfficials/SpatialPosters)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dwnsk-cpu/SpatialPosters/tree/dev)
 
 You can deploy the Docker container to Heroku using the following steps:
 1. Make sure your Heroku CLI is logged in and the Container Registry plugin is installed (`heroku container:login`).
